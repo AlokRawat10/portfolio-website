@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Profile Page of Alok">
+    <title>Alok's Profile</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+    
+
+    <nav class="navbar">
+        <div class="navbar-container">
+                <span class="nav-logo"><span class="log">Alok</span> Rawat</span>
+            <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+        <div class="nav-menu">           
+        <!--<a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a> -->
+            <a href="Resume.pdf" class="resume-button" download>Download Resume</a>
+        </div>
+    </nav>
+    
+        <header>
+            <p>Hello this is Alok, and here's a little info about me.</p>
+            <img src="img2.webp" alt="Alok's Pic" class="image">
+            <h1>This is <span class="head">Alok</span>, a <span class="about-me"></span></h1>
+            <p>I am, a B.Sc. IT student at Uttaranchal College of Science and Technology, affiliated with HNBGU University. Currently, I am enhancing my technical skills through a three-month Full Stack Web Development course. My academic background in computer science, combined with hands-on experience in programming languages like C, C++, JavaScript & PHP, has equipped me with a strong foundation in software development.
+
+                I am passionate about building responsive, user-friendly web applications and am eager to transition into a career in web development. My goal is to leverage my academic knowledge and practical skills to contribute to innovative projects that solve real-world problems. I am committed to continuous learning and excited to collaborate with experienced professionals in the tech industry
+
+            </p>
+        </header>
+        <hr>
+
+
+    
+        
+ 
+        <section>
+            
+                <h2>My Technical Skills</h2>
+                <h3>Programming Languages:</h3>
+                    <div class="skill-list"></div>
+            
+                        <ul class="skill-list">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                        </ul>
+                   </div>
+
+                   <h3>Web Development:</h3>
+                    <div class="skill-list"></div>
+            
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>SASS/SCSS</li>
+                        </ul>
+                   </div>
+
+                   <h3>Database Management:</h3>
+                    <div class="skill-list"></div>
+            
+                        <ul class="skill-list">
+                            <li>SQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                   </div>
+
+                   <h3>Version Control:</h3>
+                    <div class="skill-list"></div>
+            
+                        <ul class="skill-list">
+                            <li>Git</li>
+                        </ul>
+                   </div>
+
+                   <h3>Problem Solving:</h3>
+                    <div class="skill-list"></div>
+            
+                        <ul class="skill-list">
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                        </ul>
+                   </div>
+
+                   <h3>Tools:</h3>
+                    <div class="skill-list"></div>
+            
+                        <ul class="skill-list">
+                            <li>VS Code</li>
+                            <li>GitHubL</li>
+                        </ul>
+                   </div>
+
+                   
+                    
+        
+        </section>
+
+        <div class="horizontal-scroll">
+            <div class="icon-container">
+                <img src="html.png" alt="Icon 1">
+                <img src="css.png" alt="Icon 2">
+                <img src="JS.png" alt="Icon 3">
+                <img src="node.png" alt="Icon 4">
+                <img src="React.png" alt="Icon 5">
+                
+            </div>
+        </div>
+        <hr>
+        
+        
+        <section id="programming-languages">
+
+
+            <h2>Programming Languages</h2>
+            <div class="skill">
+                <p>C</p>
+                <div class="progress-bar" data-progress ="90"></div>
+            </div>
+            <div class="skill">
+                <p>C++</p>
+                <div class="progress-bar" data-progress ="80"></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar" data-progress ="60"></div>
+            </div>
+
+
+        </section>
+        <hr>
+
+        <section>
+            <h2>Project</h2>
+            <p>Take a look at my project</p>
+            <div id="projects" >
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="weather.jpg">
+                        <h3>Weather API</h3>
+                        <p>It's  a weather forecast website in which the weather api is used.</p>
+                        <a href="project1/index.html" class="btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <hr>
+
+        <section>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+        
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <hr>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p>Let's connect!</p>
+            <p><a href="mailto:ashurawat@gmail.com"><img src="gmail.png" class="icon-link email-icon"></a>  <a href="https://www.linkedin.com/in/alok-rawat-412a49244"><img src="link.png" class="icon-link linkedin-icon"></a></p>
+    
+        </section>
+        
+        <footer>
+            <p>&copy;2024 Built by Alok Rawat</p>
+        </footer>
+    
+</body>
+</html>  
