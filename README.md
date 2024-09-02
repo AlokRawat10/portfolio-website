@@ -17,3 +17,6 @@ This is my personal portfolio website designed to showcase my web development pr
 - HTML5
 - CSS3 (including animations and responsive design techniques)
 - JavaScript
+- express.js
+- node.js
+- nodemailer
