@@ -11,12 +11,18 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Serve static files (like main.html)
-app.use(express.static(path.join(__dirname, '..', 'public')));
+// Serve static files from Portfolio/public
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Handle the root route to serve the main.html file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'main.html'));
+    const filePath = path.join(__dirname, 'public', 'main.html');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error sending file:', err);
+            res.status(err.status).end();
+        }
+    });
 });
 
 // Email configuration using your Gmail account
